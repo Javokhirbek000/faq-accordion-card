@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #1e1f36;
+  --secondary-color: #4b4c5f;
+  --tertiary-color: #787887;
+  --Kumbh_sans: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin font($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+html {
+  font-size: 10px;
+  
+  body {
+    height: 100vh;
+    font-family: var(--Kumbh_sans);
+    font-size: 62.5%;
+    background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper {
+      width: 920px;
+      height: 509px;
+      border-radius: 23px;
+      background: #fff;
+      box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+
+      display: flex;
+
+      .img {
+        transform: translate(-412px, 70px);
+        width: 450px;
+        z-index: 0;
+
+        img:nth-child(1) {
+          width: 964px;
+          height: 580px;
+        }
+
+        img:nth-child(2) {
+          display: none;
+        }
+      }
+
+      .content {
+        width: 370px;
+        padding: 65px 0;
+        z-index: 1;
+        overflow: hidden;
+
+        .title {
+          @include font(#1e1f36, 3.2rem, 700);
+          margin-bottom: 45px;
+        }
+        .item_con {
+          details {
+            padding: 20px 0;
+            border-bottom: 1px solid #e8e8ea;
+            summary {
+              @include font(#4b4c5f, 1.4rem, 400);
+              line-height: 18px;
+              letter-spacing: 0.1rem;
+              list-style-type: none;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+            p {
+              @include font(#787887, 1.5rem, 400);
+            }
+          }
+          details[open] {
+            summary {
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+            p {
+              padding: 10px 10px 0 10px;
+            }
+          }
+          details:hover {
+            cursor: pointer;
+            summary:hover {
+              color: #f47b56;
+              transition: color 0.3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
