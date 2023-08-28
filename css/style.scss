@@ -65,9 +65,9 @@ html {
 
         .title {
           @include font(#1e1f36, 3.2rem, 700);
-          margin-bottom: 45px;
         }
         .item_con {
+          margin-top: 20px;
           details {
             padding: 20px 0;
             border-bottom: 1px solid #e8e8ea;

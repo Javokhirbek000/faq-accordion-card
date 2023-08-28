@@ -56,7 +56,9 @@ html body .wrapper .content .title {
   color: #1e1f36;
   font-size: 3.2rem;
   font-weight: 700;
-  margin-bottom: 45px;
+}
+html body .wrapper .content .item_con {
+  margin-top: 20px;
 }
 html body .wrapper .content .item_con details {
   padding: 20px 0;
