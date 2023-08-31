@@ -207,10 +207,14 @@ html {
 
             p {
               padding: 0.5rem;
+              font-size: 2rem;
             }
 
             details {
               padding: 1.5rem 0;
+              summary {
+                font-size: 2.3rem;
+              }
             }
           }
         }
@@ -236,7 +240,7 @@ html {
         .img {
           width: inherit;
           transform: translate(-1.5rem, -50%);
-          
+
           img {
             width: 100%;
             margin: 0 auto;

@@ -174,9 +174,13 @@ html body .wrapper .content .item_con details:hover summary:hover {
   }
   html body .wrapper .content .item_con p {
     padding: 0.5rem;
+    font-size: 2rem;
   }
   html body .wrapper .content .item_con details {
     padding: 1.5rem 0;
+  }
+  html body .wrapper .content .item_con details summary {
+    font-size: 2.3rem;
   }
 }
 @media only screen and (max-width: 769px) {
