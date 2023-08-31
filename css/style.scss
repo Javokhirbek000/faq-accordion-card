@@ -207,7 +207,7 @@ html {
 
             p {
               padding: 0.5rem;
-              font-size: 2.2rem;
+              font-size: 2rem;
             }
 
             details {
@@ -263,6 +263,20 @@ html {
             text-align: center;
             margin-bottom: 2rem;
           }
+
+          .item_con {
+            p {
+              padding: 0.5rem;
+              font-size: 2rem;
+            }
+
+            details {
+              padding: 1.5rem 0;
+              summary {
+                font-size: 2.3rem;
+              }
+            }
+          }
         }
       }
     }
@@ -308,6 +322,20 @@ html {
             display: block;
             text-align: center;
             margin-bottom: 2rem;
+          }
+
+          .item_con {
+            p {
+              padding: 0.5rem;
+              font-size: 2rem;
+            }
+
+            details {
+              padding: 1.5rem 0;
+              summary {
+                font-size: 2.3rem;
+              }
+            }
           }
         }
       }
